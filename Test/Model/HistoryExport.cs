@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Test.Model
 {
@@ -13,7 +9,7 @@ namespace Test.Model
         public DateTime dateTime { get; private set; }
         public string userName { get; private set; }
         public string cellName { get; private set; }
-
+        public TimeSpan time { get; set; }
         public HistoryExport(int id, string name, DateTime dateTime, string userName, string cellName)
         {
             this.id = id;
@@ -21,6 +17,7 @@ namespace Test.Model
             this.dateTime = dateTime;
             this.userName = userName;
             this.cellName = cellName;
+            time = dateTime.TimeOfDay;
         }
     }
 }

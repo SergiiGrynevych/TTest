@@ -20,17 +20,7 @@ create table historyExports
 
 insert into historyExports
 values
-('ExportTest1', '2021/01/01', 'Mike', null),
-('ExportTest2', '2021/02/02', 'Peter', 'Current'),
-('ExportTest3', '2021/03/03', 'olga', 'Current')
-
-
-
-select * from historyExports
-
-
-
-select id, [name], [dateTime], userName, cellName from historyExports
-
-
+('ExportTest1', '2022/03/01', 'Mike', null),
+('ExportTest2', '2022/04/02', 'Peter', 'Current'),
+('ExportTest3', '2022/05/03', 'olga', 'Current')
 
